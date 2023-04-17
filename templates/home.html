@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown Example</title>
+  </head>
+  <body>
+    <h1>Dropdown Example</h1>
+    <form method="POST" action="{{ url_for('file_type') }}">
+      <label for="options">Selecciona una opción:</label>
+      <select id="options" name="options">
+        <option value="archivo">Archivo</option>
+        <option value="tabla">Tabla</option></select
+      ><br /><br />
+      <input type="submit" value="siguiente" />
+    </form>
+  </body>
+</html>

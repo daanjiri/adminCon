@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario MCP</title>
+  </head>
+  <body>
+    <h1>Formulario MCP para tabla mcpTbArchivo</h1>
+    <form action="{{ url_for('insertar_archivo') }}" method="post">
+      <label for="codigoArchivo">Código de archivo:</label><br />
+      <input type="text" id="codigoArchivo" name="codigoArchivo" /><br />
+
+      <label for="descripcionArchivo">Descripción de archivo:</label><br />
+      <input
+        type="text"
+        id="descripcionArchivo"
+        name="descripcionArchivo"
+      /><br />
+
+      <label for="nombreGestorConexion">Nombre de gestor de conexión:</label
+      ><br />
+      <input
+        type="text"
+        id="nombreGestorConexion"
+        name="nombreGestorConexion"
+      /><br />
+
+      <label for="codigoTipoArchivo">Código de tipo de archivo:</label><br />
+      <input
+        type="text"
+        id="codigoTipoArchivo"
+        name="codigoTipoArchivo"
+      /><br />
+
+      <label for="nombreLogico">Nombre lógico:</label><br />
+      <input type="text" id="nombreLogico" name="nombreLogico" /><br />
+
+      <label for="nombreLogicoProcesado">Nombre lógico procesado:</label><br />
+      <input
+        type="text"
+        id="nombreLogicoProcesado"
+        name="nombreLogicoProcesado"
+      /><br />
+
+      <label for="nombreLogicoCompresion">Nombre lógico compresión:</label
+      ><br />
+      <input
+        type="text"
+        id="nombreLogicoCompresion"
+        name="nombreLogicoCompresion"
+      /><br />
+
+      <label for="patronNombreArchivo">Patrón de nombre de archivo:</label
+      ><br />
+      <input
+        type="text"
+        id="patronNombreArchivo"
+        name="patronNombreArchivo"
+      /><br />
+
+      <label for="requiereCompresion">Requiere compresión:</label><br />
+      <input
+        type="text"
+        id="requiereCompresion"
+        name="requiereCompresion"
+      /><br />
+
+      <label for="requiereDescompresion">Requiere descompresión:</label><br />
+      <input
+        type="text"
+        id="requiereDescompresion"
+        name="requiereDescompresion"
+      /><br />
+
+      <label for="claveCompresion">Clave de compresión:</label><br />
+      <input type="text" id="claveCompresion" name="claveCompresion" /><br />
+
+      <label for="validacionInterna">Validación interna:</label><br />
+      <input
+        type="text"
+        id="validacionInterna"
+        name="validacionInterna"
+      /><br />
+
+      <label for="criterioProcesado">Criterio de procesado:</label><br />
+      <input
+        type="text"
+        id="criterioProcesado"
+        name="criterioProcesado"
+      /><br />
+
+      <label for="sentenciaValidacion">Sentencia de validación:</label><br />
+      <input
+        type="text"
+        id="sentenciaValidacion"
+        name="sentenciaValidacion"
+      /><br />
+
+      <label for="separadorColumna">Separador de columna:</label><br />
+      <input type="text" id="separadorColumna" name="separadorColumna" /><br />
+
+      <label for="filaValidacion">Fila de validación:</label><br />
+      <input type="text" id="filaValidacion" name="filaValidacion" /><br />
+
+      <label for="columnaValidacion">Columna de validación:</label><br />
+      <input
+        type="text"
+        id="columnaValidacion"
+        name="columnaValidacion"
+      /><br />
+
+      <label for="posicionInicio">Posición de inicio:</label><br />
+      <input type="text" id="posicionInicio" name="posicionInicio" /><br />
+
+      <label for="posicionFin">Posición de fin:</label><br />
+      <input type="text" id="posicionFin" name="posicionFin" /><br />
+
+      <label for="indicadorEliminarArchivoOrigen"
+        >Indicador para eliminar archivo origen:</label
+      ><br />
+      <input
+        type="text"
+        id="indicadorEliminarArchivoOrigen"
+        name="indicadorEliminarArchivoOrigen"
+      /><br />
+
+      <label for="formatoArchivo">Formato del archivo:</label><br />
+      <input type="text" id="formatoArchivo" name="formatoArchivo" /><br />
+
+      <label for="delimitadorCabecera">Delimitador de la cabecera:</label><br />
+      <input
+        type="text"
+        id="delimitadorCabecera"
+        name="delimitadorCabecera"
+      /><br />
+
+      <label for="saltoFila">Salto de fila:</label><br />
+      <input type="text" id="saltoFila" name="saltoFila" /><br />
+
+      <label for="cabeceraPrimeraFila">Cabecera en primera fila:</label><br />
+      <input
+        type="text"
+        id="cabeceraPrimeraFila"
+        name="cabeceraPrimeraFila"
+      /><br />
+
+      <label for="fuenteInformacion">Fuente de información:</label><br />
+      <input
+        type="text"
+        id="fuenteInformacion"
+        name="fuenteInformacion"
+      /><br />
+
+      <label for="disponible">Disponible:</label><br />
+      <input type="text" id="disponible" name="disponible" /><br />
+
+      <label for="fechaUltimaActualizacion">Fecha última actualización:</label
+      ><br />
+      <input
+        type="text"
+        id="fechaUltimaActualizacion"
+        name="fechaUltimaActualizacion"
+      /><br />
+
+      <label for="diasVigencia">Días de vigencia:</label><br />
+      <input type="text" id="diasVigencia" name="diasVigencia" /><br />
+
+      <label for="fechaCaducidad">Fecha de caducidad:</label><br />
+      <input type="date" id="fechaCaducidad" name="fechaCaducidad" /><br />
+
+      <label for="fechaIngreso">Fecha de ingreso:</label><br />
+      <input type="date" id="fechaIngreso" name="fechaIngreso" /><br />
+
+      <label for="usuarioIngreso">Usuario de ingreso:</label><br />
+      <input type="text" id="usuarioIngreso" name="usuarioIngreso" /><br />
+
+      <input type="submit" value="siguiente" />
+    </form>
+  </body>
+</html>

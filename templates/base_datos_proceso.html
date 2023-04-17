@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de Accesos</title>
+  </head>
+  <body>
+    <h1>Formulario de Accesos</h1>
+    <form action="{{ url_for('insertar_proceso_base_datos') }}" method="POST">
+      <label for="codigo_acceso">Código de Acceso:</label>
+      <input type="text" id="codigo_acceso" name="codigo_acceso" /><br /><br />
+
+      <label for="codigo_base_datos">Código de Base de Datos:</label>
+      <input
+        type="text"
+        id="codigo_base_datos"
+        name="codigo_base_datos"
+        required
+      /><br /><br />
+
+      <label for="codigo_proceso">Código de Proceso:</label>
+      <input
+        type="text"
+        id="codigo_proceso"
+        name="codigo_proceso"
+      /><br /><br />
+
+      <label for="fecha_ingreso">Fecha de Ingreso:</label>
+      <input
+        type="datetime-local"
+        id="fecha_ingreso"
+        name="fecha_ingreso"
+      /><br /><br />
+
+      <label for="usuario_ingreso">Usuario de Ingreso:</label>
+      <input
+        type="text"
+        id="usuario_ingreso"
+        name="usuario_ingreso"
+      /><br /><br />
+
+      <input type="submit" value="Guardar" />
+    </form>
+  </body>
+</html>

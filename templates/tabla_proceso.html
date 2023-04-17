@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de proceso tabla</title>
+  </head>
+  <body>
+    <h1>Formulario de proceso tabla</h1>
+    <form method="POST" action="{{ url_for('insertar_proceso_tabla') }}">
+      <label for="codigoProceso">Código de proceso:</label>
+      <input type="text" id="codigoProceso" name="codigoProceso" /><br />
+
+      <label for="codigoBaseDatos">Código de base de datos:</label>
+      <input type="text" id="codigoBaseDatos" name="codigoBaseDatos" /><br />
+
+      <label for="codigoTabla">Código de tabla:</label>
+      <input type="text" id="codigoTabla" name="codigoTabla" /><br />
+
+      <label for="flujoAcceso">Flujo de acceso:</label>
+      <input type="text" id="flujoAcceso" name="flujoAcceso" /><br />
+
+      <label for="fechaIngreso">Fecha de ingreso:</label>
+      <input type="datetime" id="fechaIngreso" name="fechaIngreso" /><br />
+
+      <label for="usuarioIngreso">Usuario de ingreso:</label>
+      <input type="text" id="usuarioIngreso" name="usuarioIngreso" /><br />
+
+      <input type="submit" value="Guardar" />
+    </form>
+  </body>
+</html>

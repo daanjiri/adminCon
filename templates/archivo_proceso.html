@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de inserción</title>
+  </head>
+  <body>
+    <h1>Insertar registro en tabla</h1>
+    <form method="POST" action="{{ url_for('insertar_archivo_proceso') }}">
+      <label for="codigoProceso">Código de Proceso:</label>
+      <input type="text" id="codigoProceso" name="codigoProceso" /><br /><br />
+      <label for="codigoServidor">Código de Servidor:</label>
+      <input
+        type="text"
+        id="codigoServidor"
+        name="codigoServidor"
+      /><br /><br />
+
+      <label for="codigoArchivo">Código de Archivo:</label>
+      <input type="text" id="codigoArchivo" name="codigoArchivo" /><br /><br />
+
+      <label for="codigoDirectorio">Código de Directorio:</label>
+      <input
+        type="text"
+        id="codigoDirectorio"
+        name="codigoDirectorio"
+      /><br /><br />
+
+      <label for="codigoTipoAcceso">Código de Tipo de Acceso:</label>
+      <input
+        type="text"
+        id="codigoTipoAcceso"
+        name="codigoTipoAcceso"
+      /><br /><br />
+
+      <label for="codigoAcceso">Código de Acceso:</label>
+      <input type="text" id="codigoAcceso" name="codigoAcceso" /><br /><br />
+
+      <label for="flujoAcceso">Flujo de Acceso:</label>
+      <input type="text" id="flujoAcceso" name="flujoAcceso" /><br /><br />
+
+      <label for="fechaIngreso">Fecha de Ingreso:</label>
+      <input type="text" id="fechaIngreso" name="fechaIngreso" /><br /><br />
+
+      <label for="usuarioIngreso">Usuario de Ingreso:</label>
+      <input
+        type="text"
+        id="usuarioIngreso"
+        name="usuarioIngreso"
+      /><br /><br />
+
+      <input type="submit" value="Guardar" />
+    </form>
+  </body>
+</html>

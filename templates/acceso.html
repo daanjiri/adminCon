@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de acceso</title>
+  </head>
+  <body>
+    <h1>Formulario de acceso</h1>
+    <form method="POST" action="{{ url_for('insertar_acceso') }}">
+      <label for="codigoAcceso">Código de acceso:</label>
+      <input type="text" id="codigoAcceso" name="codigoAcceso" /><br /><br />
+      <label for="integrado">Integrado:</label>
+      <input type="text" id="integrado" name="integrado" /><br /><br />
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario" /><br /><br />
+      <label for="clave">Clave:</label>
+      <input type="password" id="clave" name="clave" /><br /><br />
+      <label for="claveHuellaDigital">Clave Huella Digital:</label>
+      <input
+        type="text"
+        id="claveHuellaDigital"
+        name="claveHuellaDigital"
+      /><br /><br />
+      <label for="certificadoDigital">Certificado Digital:</label>
+      <input
+        type="text"
+        id="certificadoDigital"
+        name="certificadoDigital"
+      /><br /><br />
+      <label for="fechaIngreso">Fecha de ingreso:</label>
+      <input type="text" id="fechaIngreso" name="fechaIngreso" /><br /><br />
+      <label for="usuarioIngreso">Usuario de ingreso:</label>
+      <input
+        type="text"
+        id="usuarioIngreso"
+        name="usuarioIngreso"
+      /><br /><br />
+      <label for="fechaModificacion">Fecha de modificación:</label>
+      <input
+        type="text"
+        id="fechaModificacion"
+        name="fechaModificacion"
+      /><br /><br />
+      <label for="usuarioModificacion">Usuario de modificación:</label>
+      <input
+        type="text"
+        id="usuarioModificacion"
+        name="usuarioModificacion"
+      /><br /><br />
+      <input type="submit" value="siguiente" />
+    </form>
+  </body>
+</html>

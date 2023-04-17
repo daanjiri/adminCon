@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de Base de Datos</title>
+  </head>
+  <body>
+    <h1>Formulario de Base de Datos</h1>
+    <form method="post" action="{{ url_for('insertar_tabla') }}">
+      <label for="codigoBaseDatos">Código Base de Datos:</label>
+      <input type="text" id="codigoBaseDatos" name="codigoBaseDatos" required />
+      <br /><br />
+      <label for="codigoTabla">Código de Tabla:</label>
+      <input type="text" id="codigoTabla" name="codigoTabla" required />
+      <br /><br />
+      <label for="esquemaTabla">Esquema de Tabla:</label>
+      <input type="text" id="esquemaTabla" name="esquemaTabla" />
+      <br /><br />
+      <label for="nombreTabla">Nombre de Tabla:</label>
+      <input type="text" id="nombreTabla" name="nombreTabla" />
+      <br /><br />
+      <label for="disponible">Disponible:</label>
+      <input type="text" id="disponible" name="disponible" />
+      <br /><br />
+      <label for="fechaUltimaActualizacion">Fecha Última Actualización:</label>
+      <input
+        type="date"
+        id="fechaUltimaActualizacion"
+        name="fechaUltimaActualizacion"
+      />
+      <br /><br />
+      <label for="diasVigencia">Días de Vigencia:</label>
+      <input type="number" id="diasVigencia" name="diasVigencia" />
+      <br /><br />
+      <label for="fechaCaducidad">Fecha de Caducidad:</label>
+      <input type="date" id="fechaCaducidad" name="fechaCaducidad" />
+      <br /><br />
+      <label for="usuarioIngreso">Usuario de Ingreso:</label>
+      <input type="text" id="usuarioIngreso" name="usuarioIngreso" />
+      <br /><br />
+      <label for="fechaIngreso">Fecha de Ingreso:</label>
+      <input type="date" id="fechaIngreso" name="fechaIngreso" />
+      <br /><br />
+      <input type="submit" value="Insertar" />
+    </form>
+  </body>
+</html>

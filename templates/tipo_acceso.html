@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de inserción de acceso</title>
+  </head>
+  <body>
+    <h1>Insertar nuevo acceso</h1>
+    <form action="{{ url_for('insertar_tipo_acceso') }}" method="post">
+      <label for="codigoTipoAcceso">Código de tipo de acceso:</label><br />
+      <input type="text" id="codigoTipoAcceso" name="codigoTipoAcceso" /><br />
+      <label for="accesoFuente">Fuente de acceso:</label><br />
+      <input type="text" id="accesoFuente" name="accesoFuente" /><br />
+      <label for="accesoDireccion">Dirección de acceso:</label><br />
+      <input type="text" id="accesoDireccion" name="accesoDireccion" /><br />
+      <label for="accesoRemoto">Acceso remoto:</label><br />
+      <input type="text" id="accesoRemoto" name="accesoRemoto" /><br /><br />
+      <input type="submit" value="Guardar" />
+    </form>
+  </body>
+</html>

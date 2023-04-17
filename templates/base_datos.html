@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de inserción de acceso</title>
+  </head>
+  <body>
+    <h1>Insertar base de datos</h1>
+    <form method="POST" action="{{ url_for('insertar_base_datos') }}">
+      <label for="codigoBaseDatos">Código de la base de datos:</label>
+      <input
+        type="text"
+        id="codigoBaseDatos"
+        name="codigoBaseDatos"
+      /><br /><br />
+
+      <label for="codigoServidor">Código del servidor:</label>
+      <input
+        type="text"
+        id="codigoServidor"
+        name="codigoServidor"
+      /><br /><br />
+
+      <label for="codigoMotorBaseDatos"
+        >Código del motor de base de datos:</label
+      >
+      <input
+        type="text"
+        id="codigoMotorBaseDatos"
+        name="codigoMotorBaseDatos"
+      /><br /><br />
+
+      <label for="nombreBaseDatos">Nombre de la base de datos:</label>
+      <input
+        type="text"
+        id="nombreBaseDatos"
+        name="nombreBaseDatos"
+      /><br /><br />
+
+      <label for="nombreInstancia">Nombre de la instancia:</label>
+      <input
+        type="text"
+        id="nombreInstancia"
+        name="nombreInstancia"
+      /><br /><br />
+
+      <label for="puerto">Puerto:</label>
+      <input type="text" id="puerto" name="puerto" /><br /><br />
+
+      <label for="nombreGestorConexion">Nombre del gestor de conexión:</label>
+      <input
+        type="text"
+        id="nombreGestorConexion"
+        name="nombreGestorConexion"
+      /><br /><br />
+
+      <input type="submit" value="Insertar registro" />
+    </form>
+  </body>
+</html>
