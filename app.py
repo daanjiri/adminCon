@@ -7,11 +7,11 @@ app.debug = True
 
 # # Define the connection parameters
 # conn_params = {
-#     "host": "172.24.100.7",
-#     "port": "???",
-#     "database": "your_database_name",
-#     "user": "estudiante",
-#     "password": "HrwMKTiV4J5g8x"
+#     "host": "172.24.100.8",
+#     "port": "1433",
+#     "database": "MDMCONTROLPROCESO",
+#     "user": "sa",
+#     "password": "sa"
 # }
 
 # # Create a connection object
